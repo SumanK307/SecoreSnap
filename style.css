@@ -12,7 +12,7 @@
 }
 
 body { 
-  background: #00C4C4;
+  background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
   height: 100vh;
 }
 
@@ -25,7 +25,7 @@ html {
 /* apply on all section */
 section{  
   padding: 8rem 6% 1rem;
-  min-height: 75vh;
+  min-height: 95vh;
 }
 
 .aboutus,.home,.sgpa,.cgpa{
@@ -36,6 +36,7 @@ section{
 .title {
   font-size: 40px;
   margin-bottom: 15px;
+  margin-top: 10px;
   color: black;
   text-align: center;
 }
@@ -56,7 +57,8 @@ section{
 /* navbar ke niche black line */
 .sticky {
   border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-  background: #00C4C4;
+  /* background: #00C4C4; */
+   background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
 }
 
 .logo {
@@ -103,7 +105,7 @@ section{
 /* Home Section */
 .home {
   width: 100%;
-  padding: 60px 0px 40px 0px;
+  padding: 60px 0px 15px 0px;
 }
 
 .home-container {
@@ -111,8 +113,7 @@ section{
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  margin: auto;
-  padding: 0 50px;
+  padding: 0 70px;
 }
 
 /* Left Side */
@@ -136,7 +137,7 @@ section{
 
 .btn.green {
   padding: 12px 24px;
-  background-color: white;
+  background: linear-gradient(135deg, #ffffff, #6cd1e8, #66a8b8);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -146,7 +147,7 @@ section{
 }
 
 .btn.green:hover {
-  background-color: rgba(245, 245, 245, 0.914);
+  background: linear-gradient(135deg, #e3f9f8, #46bad4, #419cb3);
 }
 
 /* Right Side */
@@ -167,7 +168,9 @@ section{
 
 .para {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding-top: 15px;
   color: #333;
   text-align:center;
 }
@@ -225,11 +228,11 @@ section{
   cursor: pointer;
   color: black;
   transition: background-color 0.3s ease;
-  background-color: #00C4C4;
+   background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
 }
 
 .btn:hover {
-  background-color: rgb(0, 255, 255);
+ background: linear-gradient(135deg, #01ffff, #22a6d2, #b3f0ff);
 }
 
 
@@ -239,12 +242,12 @@ section{
   color: #333;
   text-align: center;
   max-width: 800vh;
-  margin: auto;
+  margin-top: 23px;
 } 
 
 .aboutus img {
   display: block;
-  margin: 1.5rem auto 0 auto;
+  margin: 1.5rem auto 20px auto;
   max-width: 230px;
   width: 100%;
   border-radius: 10px;
@@ -289,7 +292,7 @@ section{
   display: block;
 }
 .footer .box-container .boxF a:hover {
-  color: #00C4C4;
+  color: #008dc4;
 }
 
 .footer .credit {
@@ -302,16 +305,17 @@ section{
   border-top: 0.1rem solid #fff3;
 }
 .footer .credit span {
-  color: #00C4C4;
+  color: #008dc4;
 }
 
 
 
 
-/************ Responsive Design ************/
 
-/* Tablets */
-@media (max-width: 750px) {
+/* ================= Responsive Styles ================= */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
   .home-container {
     flex-direction: column;
     text-align: center;
@@ -320,10 +324,15 @@ section{
 
   .home-text {
     flex: 1 1 100%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .home-image {
+    flex: 1;
+    text-align: center;
+  }
+
+  .home-image{
     flex: 1 1 100%;
     text-align: center;
   }
@@ -339,28 +348,31 @@ section{
   }
 
   .calculator-box {
-    width: 100%;
+    margin-top: 20px;
+    width: 80%;
   }
-
   .navbar a {
     margin: 0 1rem;
   }
 }
 
-/* Mobile */
+/* For small mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
+  body {
+    background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
+  }
+
+  section {
+    padding: 6rem 3% 2rem;
+    min-height: auto;
+    background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
+  }
   html {
     font-size: 50%;
   }
-
   .header {
     padding: 1rem 3%;
   }
-
-  section{  
-  padding: 6rem 4% 1rem;
-  
-}
 
   /* Mobile Navbar */
   #menu {
@@ -373,7 +385,7 @@ section{
     width: 50%;
     height: 200px;
     padding: 3px 3.5%;
-    background: #00C4C4;
+     background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     display: none;
@@ -389,7 +401,6 @@ section{
     font-size: 2rem;
   }
 
-
   /* Home Section */
   .home-container {
     flex-direction: column;
@@ -397,31 +408,32 @@ section{
   }
 
   .home-text h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .home-text p {
     font-size: 1.4rem; 
   }
 
-  /* About Us */
-  .aboutus p {
-    font-size: 1.4rem;
-    padding: 0 1.5rem;
-  }
-  .btn,
-  .btn.green {
+  .btn.green, .btn {
+    width: 100%;
     font-size: 14px;
-    padding: 10px 18px;
+    padding: 10px;
   }
 
-  .title {
-    font-size: 2.5rem;
+  .calculator-content img {
+    max-width: 100%;
+  }
+
+  .calculator-box {
+    padding: 15px;
+  }
+
+  .aboutus p {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+   .title {
+    font-size: 3.5rem;
   }
 }
-
-
-
-
-
-

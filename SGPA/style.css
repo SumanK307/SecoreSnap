@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #00C4C4;
+    background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
     padding: 15px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -37,7 +37,7 @@ header {
 label {
     display: block;
     margin: 10px 0;
-    color: #00C4C4;
+    color: #01b5fc;
     font-size: 20px;
     cursor: pointer;
 }
@@ -53,9 +53,13 @@ button {
     cursor: pointer; 
 }
 button {
+    width: 160px;
+    height: 40px;
     cursor: pointer;
-    background-color: rgb(0, 255, 255);
+    background: linear-gradient(135deg, #00C4C4, #0099cc, #66e0ff);
     color: black;
+    font-weight: 700;
+    margin-top: 20px;
     border: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
@@ -63,12 +67,12 @@ button {
 
 button:hover {
     /* background-color: rgba(0, 255, 255); */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #result {
     margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(0, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    color: #01b5fc;
 }
